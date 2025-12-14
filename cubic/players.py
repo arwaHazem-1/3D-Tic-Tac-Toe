@@ -1,20 +1,8 @@
-"""
-Player classes for Cubic game.
-"""
-
 from cubic.board import Board
 
 
 class HumanPlayer:
-    """Represents a human player."""
-    
     def __init__(self, player_id: int):
-        """
-        Initialize human player.
-        
-        Args:
-            player_id: PLAYER_X or PLAYER_O
-        """
         self.player_id = player_id
         self.name = "Human"
     
@@ -24,16 +12,7 @@ class HumanPlayer:
 
 
 class AIPlayer:
-    """Represents an AI player."""
-    
     def __init__(self, player_id: int, depth: int = 4):
-        """
-        Initialize AI player.
-        
-        Args:
-            player_id: PLAYER_X or PLAYER_O
-            depth: Search depth for minimax
-        """
         self.player_id = player_id
         self.depth = depth
         self.name = f"AI (Depth {depth})"
@@ -44,15 +23,7 @@ class AIPlayer:
 
 
 class RandomPlayer:
-    """Represents a random player (for testing)."""
-    
     def __init__(self, player_id: int):
-        """
-        Initialize random player.
-        
-        Args:
-            player_id: PLAYER_X or PLAYER_O
-        """
         self.player_id = player_id
         self.name = "Random"
     

@@ -1,13 +1,3 @@
-"""
-Cubic: 4x4x4 3D Tic-Tac-Toe Game
-
-A complete implementation with:
-- Minimax algorithm
-- Alpha-Beta pruning
-- Heuristic evaluation functions
-- User-friendly GUI
-"""
-
 __version__ = "1.0.0"
 __author__ = "Your Name"
 
